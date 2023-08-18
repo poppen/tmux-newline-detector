@@ -9,3 +9,7 @@ is_command_available() {
 is_osx() {
   [[ "$(uname)" == "Darwin" ]]
 }
+
+is_wsl() {
+  [[ "$(uname)" == "Linux" && -n "$WSL_DISTRO_NAME" ]]
+}
