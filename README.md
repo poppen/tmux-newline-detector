@@ -1,7 +1,7 @@
 tmux newline detector
 =====================
 
-This [tpm](https://github.com/tmux-plugins/tpm) plugin detects newline in tmux buffer (or clipboard if you use [reattach-to-user-namespace](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard)), and asks for you whether or not pasting it to terminal with **kindness**. Also, add **peek** key binding to show what is in tmux buffer.
+This [tpm](https://github.com/tmux-plugins/tpm) plugin detects newline in tmux buffer (or clipboard if you use [reattach-to-user-namespace](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard) on macOS or [win32yank](https://github.com/equalsraf/win32yank) on WSL in Windows), and asks for you whether or not pasting it to terminal with **kindness**. Also, add **peek** key binding to show what is in tmux buffer.
 
 What is **kindess**? If your buffer is only one sentence and includes newline, this plugin removes the newline! But nothing to do if several sentences buffered in tmux.
 
@@ -10,6 +10,7 @@ What is **kindess**? If your buffer is only one sentence and includes newline, t
 1. [tmux](https://github.com/tmux/tmux)
 2. [tpm](https://github.com/tmux-plugins/tpm)
 3. [reattach-to-user-namespace](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard) (optional)
+4. [win32yank](https://github.com/equalsraf/win32yank) (optional)
 
 ## Install
 
