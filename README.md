@@ -10,7 +10,6 @@ What is **kindess**? If your buffer is only one sentence and includes newline, t
 1. [tmux](https://github.com/tmux/tmux)
 2. [tpm](https://github.com/tmux-plugins/tpm)
 3. [reattach-to-user-namespace](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard) (optional)
-4. [win32yank](https://github.com/equalsraf/win32yank) (optional)
 
 ## Install
 
