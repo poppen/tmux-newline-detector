@@ -6,8 +6,8 @@ source "${CURRENT_DIR}/helpers.sh"
 
 if is_osx && is_command_available 'reattach-to-user-namespace'; then
   reattach-to-user-namespace pbpaste | tmux load-buffer -
-elif is_wsl && is_command_available 'win32yank.exe'; then
-  win32yank.exe -o --lf | tmux load-buffer -
+elif is_wsl; then
+  powershell.exe -NoProfile -c "\$clip = Get-Clipboard -Raw; [Console]::Out.Write(\$clip.Replace(\"\`r\", \"\"))" | tmux load-buffer -
 fi
 
 args="$*"
